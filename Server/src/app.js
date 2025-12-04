@@ -18,4 +18,11 @@ app.use('/stores', storeRoutes)
 const adminRoutes = require('./routes/admin-routes')
 app.use('/admin', adminRoutes)
 
+const ratingRoutes = require('./routes/rating-routes')
+app.use('/ratings', ratingRoutes)
+
+const ownerRoutes = require('./routes/owner-routes')
+app.use('/owner', ownerRoutes)
+
+
 module.exports = app;
