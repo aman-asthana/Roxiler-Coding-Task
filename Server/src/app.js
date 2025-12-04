@@ -9,5 +9,7 @@ app.use(express.json());
 const auth = require('./routes/auth-routes')
 app.use('/auth', auth)
 
+const userRoutes = require('./routes/users-routes');
+app.use('/users', userRoutes);
 
 module.exports = app;
